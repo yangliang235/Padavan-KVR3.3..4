@@ -1,4 +1,4 @@
-name: Build-Padavan-RT-AC85P-无插件
+name: NETGEAR-BZV
 
 on: 
   workflow_dispatch:
@@ -28,7 +28,7 @@ jobs:
         mkdir -p /opt/images/
     - name: Build Firmware
       env:
-        TNAME: RT-AC85P
+        TNAME: NETGEAR-BZV
         KERNEL: 3.4
       run: |
         cd /opt/rt-n56u/trunk
